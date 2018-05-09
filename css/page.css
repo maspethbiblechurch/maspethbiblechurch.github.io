@@ -1,0 +1,119 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+/*lato, for headers*/
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
+/*merriweather for content*/
+@import url(http://weloveiconfonts.com/api/?family=brandico);
+/*icons*/
+
+
+#panel-head{
+	color:white;
+	text-align: center;
+	font-size: 60px;
+}
+.header-font{
+	font-family: 'lato',sans-serif;
+}
+
+.panel-heading{
+	height:70px;
+}
+
+.panel-heading h4{
+	font-size: 25px;
+	padding-top: 8px;
+
+}
+.panel-body{
+	text-align: center;
+}
+.panel-body p{
+	font-family: "Merriweather", serif;
+	font-size: 20px;
+	word-spacing: 3px ;
+
+}
+
+.right{
+	float:right;
+}
+.no-effect:hover{
+	text-decoration: none;
+}
+
+.about-main{
+	color:white;
+	padding-left: 50px;
+	padding-right: 50px;
+
+}
+.about-main h1{
+text-align: center;
+margin-bottom:25px;
+}
+.about-main p{
+	font-family: "Merriweather", serif;
+	font-size: 20px;
+	word-spacing: 3px;
+	text-indent: 50px;
+	font-weight: 600;
+}
+.about-main li{
+	font-family: "Merriweather", serif;
+	font-size: 20px;
+	word-spacing: 3px;
+}
+
+.event-panel{
+	background-color: #f5f5f5;
+	font-family: font-family: "Merriweather", serif;
+}
+#latest-event-header{
+	background-color: rgba(40, 96, 144,0.6);
+	margin-bottom: 0;
+	color: white;
+	text-transform: capitalize;
+	padding-top: 5px;
+	text-align: center;
+}
+.latest-events{
+	padding: 25px 0;
+	width: 100%;
+	background-color: rgba(40, 96, 144,0.6);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	color:white !important;
+}
+
+
+#facebook-button{
+	background-color: rgb(54,75,144);
+	color:white;
+}
+
+@media(max-width: 420px){
+
+	.about-main p{
+		font-size: 14px;
+	}
+
+	.about-main li{
+		font-size: 14px;
+	}
+	.about-main{
+	color:white;
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+	.pull-right{
+		margin-left: 10px;
+	}
+	#mc-embedded-subscribe{
+		margin-top: 10px;
+	}
+}
