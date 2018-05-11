@@ -80,29 +80,6 @@ a:hover{ text-decoration: none;}
 	border-bottom: 3px solid #191919;
 }
 
-
-.line-right::after{
-	position: absolute;
-	content: '';
-	display: block;
-	width: 100vw;
-	height: 100px;
-	top: -55px;
-	background-color: #4062BB;
-	transform: skewY(-2deg);
-	z-index: 2;
-}
-.line-left::after{
-	position: absolute;
-	content: '';
-	display: block;
-	width: 100vw;
-	height: 100px;
-	top: -55px;
-	background-color: #4062BB;
-	transform: skewY(2deg);
-	z-index: 2;
-}
 hr.horizontal-rule{
 	border: 0;
 	height: 1px;
@@ -112,9 +89,64 @@ hr.horizontal-rule{
 	margin: 0;
 }
 
+/* universal rule queries */
+@media(max-width: 991px){
+	.main-header{
+		font-size: 30px;
+		margin-bottom: 25px;
+	}
+	.regular-padding-section{
+		padding: 50px 40px 60px 40px;
+	}
+	.light-blue-underline, .dark-blue-underline, .orange-underline {
+    padding-bottom: 3px;
+}
+}
+@media(max-width: 768px){
+	.main-header{
+		font-size: 26px;
+		margin-bottom: 15px;
+	}
+	.regular-padding-section{
+		padding: 40px 30px 50px 30px;
+	}
+}
+
 /* home page */
 .footer{
 	background-color: #3f3f3f;
+	padding: 60px 60px 40px 60px;
+}
+.footer .header-text{
+	font-size: 16px;
+	margin-bottom: 20px;
+	font-weight: 900;
+}
+.footer a{
+	display: block;
+	margin-bottom: 15px;
+	color: #27aae3;
+}
+.footer-second-row{
+	margin-top: 35px;
+	border-top: 2px solid #27aae3;
+}
+.footer-second-row .col-md-12{
+	margin-top: 15px;
+}
+.facebook-container span, .email-container span, .address-container span{
+	line-height: 21px;
+	vertical-align: text-bottom;
+	color: #27aae3;
+}
+
+.fa-facebook-square, .fa-envelope-square, .fa-location-arrow{
+	/* background-color: #4062BB; */
+	width: 1.5em;
+	color: #27aae3;
+}
+.fa-1_5x{
+	font-size: 1.5em;
 }
 .container-fluid{overflow: hidden;}
 
@@ -250,6 +282,13 @@ hr.horizontal-rule{
 }
 .who-we-are-container{
 	/* margin: 0px 100px; */
+}
+.who-we-are-container{
+	background-color: #e6e6e6!important;
+	background: url('../images/cross-2-design-blue-2x@large.png');
+	background-repeat: no-repeat;
+	background-size:  25% auto;
+	background-position: 4% 50%;
 }
 .block-light-blue{
 	background-color: #27aae3;
@@ -597,6 +636,26 @@ transform: rotate(30deg);
 	right: 50%;
 	transform: translateX(50%);
 }
+.about-us-link-text-with-effect{
+	border-bottom: 3px solid #B3E9C7;
+	font-weight: 900;
+	font-size: 34px;
+}
+.bible-study-link-text-with-effect{
+	border-bottom: 3px solid #8367C7;
+	font-weight: 900;
+	font-size: 34px;
+}
+.open-gym-link-text-with-effect{
+	border-bottom: 3px solid #F991CC;
+	font-weight: 900;
+	font-size: 34px;
+}
+.events-link-text-text-with-effect{
+	border-bottom: 3px solid #FFFF82;
+	font-weight: 900;
+	font-size: 34px;
+}
 
 /* contact us page  */
 .contact-us-container{
@@ -640,4 +699,117 @@ transform: rotate(30deg);
   width: 200px;
   height: 45px;
   line-height: 45px;
+}
+
+/* media queries; */
+@media(max-width: 991px){
+
+	.main-image-container{
+		height: calc(100vh - 70px);
+	}
+	.main-image-container-panel{
+		font-size: 24px
+	}
+	.main-navbar{
+		height: 70px;
+		background-size: 40px auto;
+		background-position: 35px 50%;
+	}
+	.main-navbar div a{
+		font-size: 15px;
+	letter-spacing: 0.1em;
+	}
+	.mbc-description {
+		font-size: 18px;
+    margin: 40px 20px 20px;
+	}
+	.who-we-are-container{
+		background-size:  33% auto;
+		background-position: 0% 50%;
+	}
+	.service-time-flexbox div{
+		margin: 10px 15px 0px 15px;
+	 font-size: 16px;
+	}
+	.other-meeting-times-container {
+    margin-top: 50px;
+	}
+	.other-meeting-times-container a{
+		padding: 10px 20px;
+	font-size: 18px;
+	}
+	.what-to-expect-list li {
+    font-size: 18px;
+	}
+	.fa-3x{
+		font-size: 2em!important;
+	}
+	.location-container p{
+		line-height: 28px;
+	}
+	.picture-link-text{
+		font-size: 24px;
+	}
+	.events-link-text-text-with-effect, .open-gym-link-text-with-effect, .bible-study-link-text-with-effect, .about-us-link-text-with-effect{
+		font-size: 28px;
+	}
+	.fa-1_5x {
+    font-size: 1.2em;
+	}
+	.facebook-container span, .email-container span, .address-container span{
+		padding-left: 0px;
+	  line-height: 20px;
+	}
+	.footer {
+    padding: 50px 40px 30px 40px;
+	}
+
+}
+@media(max-width: 839px){
+	.service-time-description {
+		/* padding-top: 5px; */
+	}
+	.service-time-flexbox{
+		flex-wrap: wrap;
+	}
+	.service-time-flexbox div{
+		margin-top: 30px;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media(max-width: 768px){
+	.main-navbar div a {
+		font-size: 14px;
+	}
+	.mbc-description {
+	    font-size: 16px;
+	    margin: 30px 20px 20px;
+	}
+	.who-we-are-container .line-break{
+		display: none;
+	}
+	.who-we-are-container span.bold{
+		display: block;
+		margin-bottom: 10px;
+	}
+	.other-meeting-times-container a {
+    padding: 7px 14px;
+    font-size: 17px;
+	}
+	.what-to-expect-list li {
+    font-size: 16px;
+	}
+	.fa-3x {
+    font-size: 1.6em!important;
+}
+.location-container p {
+    line-height: 23px;
+}
+.location-map {
+    width: 100%;
+		margin: 30px auto;
+}
+
 }

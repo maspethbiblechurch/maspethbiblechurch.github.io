@@ -49,72 +49,41 @@ var mainBlockVisible = false;
   })
 
   $(document).on('mouseover','.background-pic-1', function(){
-    $('#about-us-link-text').css({ 'border-bottom': '3px solid #B3E9C7',
-                                  'font-weight': '900',
-                                  'font-size': '34px'
-                                });
-
+    $('#about-us-link-text').addClass('about-us-link-text-with-effect');
     $('#about-us-link-text').animate({left: '24%'}, {easing: "swing", duration: 1000});
-
   })
   .on('mouseleave','.background-pic-1', function(){
-      $('#about-us-link-text').clearQueue().stop();
-    $('#about-us-link-text').css({ 'border-bottom': '3px solid #27aae3',
-                                  'font-weight': '500',
-                                  'font-size': '30px'
-                                });
-  $('#about-us-link-text').animate({left: '50%'}, {easing: "swing", duration: 1000});
+    $('#about-us-link-text').clearQueue().stop();
+    $('#about-us-link-text').removeClass('about-us-link-text-with-effect');
+    $('#about-us-link-text').animate({left: '50%'}, {easing: "swing", duration: 1000});
   })
 
-
   $(document).on('mouseover','.background-pic-2', function(){
-
-    $('#bible-study-link-text').css({ 'border-bottom': '3px solid #8367C7',
-                                  'font-weight': '900',
-                                  'font-size': '34px'
-                                });
+    $('#bible-study-link-text').addClass('bible-study-link-text-with-effect');
     $('#bible-study-link-text').animate({right: '30%'}, {easing: "swing", duration: 1000});
   })
   .on('mouseleave','.background-pic-2', function(){
     $('#bible-study-link-text').clearQueue().stop();
-    $('#bible-study-link-text').css({ 'border-bottom': '3px solid #27aae3',
-                                  'font-weight': '500',
-                                  'font-size': '30px'
-                                });
+    $('#bible-study-link-text').removeClass('bible-study-link-text-with-effect');
     $('#bible-study-link-text').animate({right: '50%'}, {easing: "swing", duration: 1000});
   })
 
   $(document).on('mouseover','.background-pic-3', function(){
-    $('#open-gym-link-text').css({ 'border-bottom': '3px solid #F991CC',
-                                  'font-weight': '900',
-                                  'font-size': '34px'
-                                });
-
+    $('#open-gym-link-text').addClass('open-gym-link-text-with-effect');
     $('#open-gym-link-text').animate({left: '24%'}, {easing: "swing", duration: 1000});
-
   })
   .on('mouseleave','.background-pic-3', function(){
     $('#open-gym-link-text').clearQueue().stop();
-    $('#open-gym-link-text').css({ 'border-bottom': '3px solid #27aae3',
-                                  'font-weight': '500',
-                                  'font-size': '30px'
-                                });
+    $('#open-gym-link-text').removeClass('open-gym-link-text-with-effect');
     $('#open-gym-link-text').animate({left: '50%'}, {easing: "swing", duration: 1000});
   })
 
   $(document).on('mouseover','.background-pic-4', function(){
-
-    $('#events-link-text').css({ 'border-bottom': '3px solid #FFFF82',
-                                  'font-weight': '900',
-                                  'font-size': '34px'
-                                });
+    $('#events-link-text').addClass('events-link-text-text-with-effect');
     $('#events-link-text').animate({right: '24%'}, {easing: "swing", duration: 1000});
   })
   .on('mouseleave','.background-pic-4', function(){
     $('#events-link-text').clearQueue().stop();
-    $('#events-link-text').css({ 'border-bottom': '3px solid #27aae3',
-                                  'font-weight': '500',
-                                  'font-size': '30px'
-                                });
+    $('#events-link-text').removeClass('events-link-text-text-with-effect');
     $('#events-link-text').animate({right: '50%'}, {easing: "swing", duration: 1000});
   })
