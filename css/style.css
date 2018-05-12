@@ -61,7 +61,7 @@ a:hover{ text-decoration: none;}
 /*  red background may take over for orange */
 .red-background { background-color: #D33F4B; }
 
-.dark-gray-font{ color: #191919 }
+.dark-gray-font{ color: #3f3f3f }
 .light-blue-font{ color: #27aae3;}
 .orange-font{color: #DC493A;}
 .white-font{ color: #FCFFFD; }
@@ -87,6 +87,9 @@ hr.horizontal-rule{
 	width: 100%;
 	padding: 0;
 	margin: 0;
+}
+.col-lg-0{
+	display: none;
 }
 
 /* universal rule queries */
@@ -207,15 +210,50 @@ hr.horizontal-rule{
 	height: 80px;
 	width: 100%;
 	box-shadow: 0 3px 2px -2px rgba(200,200,200,.15);
+	background-color: #FCFFFD;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
-	/* background-color: #3f3f3f; */
 	background: url("../images/cross-2-design-blue-just-graphic@sm.png");
 	background-repeat: no-repeat;
 	background-size: 50px auto;
 	background-position: 50px 50%;
+}
+.main-navbar.mobile-navbar{
+	position: fixed;
+	padding-top: 50px;
+	height: 100vh;
+	width: 100vw;
+
+	top: 0;
+	z-index: 1000;
+	align-content: flex-start;
+background: url("../images/cross-2-design-blue-just-graphic@sm.png");
+	background-size: 50% auto;
+	background-repeat: no-repeat;
+	background-position: 50% 80%;
+	background-color:  #FCFFFD;
+}
+.main-navbar.mobile-navbar div a{
+	display: block!important;
+	font-weight: 900;
+	font-size: 45px!important;
+}
+.main-navbar.mobile-navbar div{
+	width: 100%;
+	text-align: right;
+	padding-right: 25px;
+}
+.main-navbar.mobile-navbar i{
+	display: none;
+}
+.main-navbar.mobile-navbar a.active-link,.main-navbar.sticky-navbar.mobile-navbar a.active-link{
+	border: none;
+	color: #27aae3;
+}
+.mobile-menu-open{
+	cursor: pointer;
 }
 .main-navbar.sticky-navbar{
 /* background: none; */
@@ -225,6 +263,7 @@ hr.horizontal-rule{
 	top: 0;
 	z-index: 100;
 }
+
 
 .main-navbar div a{
 	/* color: #27aae3; */
@@ -358,7 +397,7 @@ hr.horizontal-rule{
 	background-color: #4062BB;
 	/* color: #fafafa; */
 	border: 2px solid #cae5ff;
-	border-radius: 10px;
+	border-radius: 4px;
 	padding: 13px 30px;
 	font-size: 20px;
 	font-weight: 900;
@@ -426,6 +465,7 @@ hr.horizontal-rule{
 .background-pic-1{
 		background: url('../images/young-adults.jpg');
 		overflow: hidden;
+		position: relative;
 }
 .background-pic-2{
 	background: url('../images/bible-study.jpg');
@@ -439,10 +479,25 @@ hr.horizontal-rule{
 	background: url('../images/picnic.jpg');
 	overflow: hidden;
 }
+.picture-text-overlay{
+	color: #3f3f3f;
+	border: 3px solid #3f3f3f;
+	padding: 5px;
+	z-index: 100;
+	font-size: 30px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 1s, opacity 1s;
+}
+
 .background-pic-1-text{
 	position: relative;
 }
-.blue-line-top-left{
+/* .blue-line-top-left{
 	margin-top: 40px;
 transform: rotate(30deg);
 	width: 50%;
@@ -450,7 +505,7 @@ transform: rotate(30deg);
 	background-color: blue;
 	opacity: 0;
 	transition: all 1.5s linear;
-}
+} */
 .background-pic-1:before, .background-pic-1:after {
   content: '';
   position: absolute;
@@ -780,6 +835,9 @@ transform: rotate(30deg);
 }
 
 @media(max-width: 768px){
+	.main-image-container-panel {
+    font-size: 20px;
+	}
 	.main-navbar div a {
 		font-size: 14px;
 	}
@@ -811,5 +869,99 @@ transform: rotate(30deg);
     width: 100%;
 		margin: 30px auto;
 }
+.col-xs-0{
+	display: none;
+}
+.background-pic-1:hover .picture-text-overlay, .background-pic-2:hover .picture-text-overlay, .background-pic-3:hover .picture-text-overlay, .background-pic-4:hover .picture-text-overlay   {
+	font-size: 30px;
+	visibility: visible;
+	opacity: 1;
+	transition: visibility 1s, opacity 1s;
+	}
+	.background-tile{
+		height: 300px!important;
+	}
+	.background-pic-1:before {
+	  border-bottom: 150px solid #B3E9C7;
+	}
+	.background-pic-1:after {
+	  border-top: 150px solid #B3E9C7;
+	}
+	.background-pic-2:before {
+	  border-top: 150px solid #8367C7;;
+	}
+	.background-pic-2:after {
+	  border-bottom: 150px solid #8367C7;
+	}
+	.background-pic-3:before {
+	  border-bottom: 150px solid #F991CC;;
+	}
+	.background-pic-3:after {
+	  border-top: 150px solid #F991CC;;
+	}
+	.background-pic-4:before {
+		border-top: 150px solid #FFFF82;
+	}
+	.background-pic-4:after {
+		border-bottom: 150px solid #FFFF82;
+	}
+	.picture-links-container .row {
+    margin-top: 60px;
+	}
+	.col-lg-0.col-xs-6{
+		display: block;
+	}
+	.footer-links-container{
+		text-align: center;
+	}
+	.footer-logo-container img{
+		max-width: 200px;
+	}
+	.footer-other-links-container{
+		clear: both;
+	}
+	.footer-links-container div:nth-child(3){
+		margin-top: 25px;
+	}
 
+}
+
+@media(max-width: 555px){
+	.main-image-container{
+		background-image: url('../images/church-mobile.jpg');
+	}
+	.main-image-container-panel {
+    background-color: transparent;
+	}
+
+	.main-image-container-panel-text{
+		background-color: #27aae3;
+		border:none;
+		left: 60%;
+		border-radius: 3px;
+		padding: 20px;
+		color: #e6e6e6!important;
+	}
+	.main-image-container-panel-text .bold span{
+		color: #e6e6e6!important;
+	}
+	.main-image-container-panel-text .light-blue-font{
+		border-bottom: 2px solid #337ab7;
+	}
+	.main-navbar{
+		background: none;
+	}
+	.main-navbar a{
+		display: none;
+	}
+	.menu-dropdown{
+		display: block!important;
+		width: 100%;
+		padding-right: 40px;
+		text-align: right;
+	}
+	.menu-dropdown .fas{
+		font-size: 2.1em!important;
+		color:#27aae3;
+	}
 }
