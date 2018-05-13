@@ -30,6 +30,9 @@ var mainBlockVisible = false;
 
        }
     })
+    $(window).on('resize', function(){
+       fixmeTop  = $('div.main-navbar').offset().top;
+    })
   })
 
   $(document).on('mouseover','.background-pic-1', function(){
