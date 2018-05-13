@@ -19,13 +19,7 @@ var mainBlockVisible = false;
 
     $(document).on('scroll', function(){
       var currentScroll = $(window).scrollTop();
-      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        $target = null;
-        }
-        else{
-          $target = $('div.main-navbar').prev();
-        }
-
+      $target = $('div.main-navbar').prev();
        if (currentScroll >= fixmeTop) {
          $('div.main-navbar').addClass('sticky-navbar');
          $target.css('margin-bottom', '75px');

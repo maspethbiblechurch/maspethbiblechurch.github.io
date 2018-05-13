@@ -929,6 +929,7 @@ transform: rotate(30deg);
 @media(max-width: 555px){
 	.main-image-container{
 		background-image: url('../images/church-mobile.jpg');
+		height: 100vh;
 	}
 	.main-image-container-panel {
     background-color: transparent;
