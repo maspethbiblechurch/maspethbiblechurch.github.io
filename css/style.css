@@ -754,6 +754,11 @@ transform: rotate(30deg);
 }
 
 /* media queries; */
+@media(min-width: 1400px){
+	.main-image-container{
+		background-position: right top;
+	}
+}
 @media(max-width: 991px){
 
 	.main-image-container{
