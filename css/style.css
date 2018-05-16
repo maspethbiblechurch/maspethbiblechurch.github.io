@@ -55,7 +55,7 @@ a:hover{ text-decoration: none;}
 
 .gray-background{ background-color: #e6e6e6; }
 .light-blue-background{ background-color: #27aae3 }
-.white-background { background-color: #FCFFFD; }
+.white-background { background-color: #EFEFEF; }
 .orange-background { background-color: #DC493A;}
 .royal-blue-background{ background-color: #4062BB; }
 /*  red background may take over for orange */
@@ -64,7 +64,7 @@ a:hover{ text-decoration: none;}
 .dark-gray-font{ color: #3f3f3f }
 .light-blue-font{ color: #27aae3;}
 .orange-font{color: #DC493A;}
-.white-font{ color: #FCFFFD; }
+.white-font{ color: #EFEFEF; }
 .gray-font{color: #e6e6e6 }
 
 .light-blue-underline{
@@ -210,7 +210,7 @@ hr.horizontal-rule{
 	height: 80px;
 	width: 100%;
 	box-shadow: 0 3px 2px -2px rgba(200,200,200,.15);
-	background-color: #FCFFFD;
+
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
@@ -219,20 +219,17 @@ hr.horizontal-rule{
 	background-repeat: no-repeat;
 	background-size: 50px auto;
 	background-position: 50px 50%;
+	background-color: #3f3f3f;
 }
 .main-navbar.mobile-navbar{
 	position: fixed;
 	padding-top: 50px;
 	height: 100vh;
 	width: 100vw;
-
+	background: none;
 	top: 0;
 	z-index: 1000;
 	align-content: flex-start;
-background: url("../images/cross-2-design-blue-just-graphic@sm.png");
-	background-size: 50% auto;
-	background-repeat: no-repeat;
-	background-position: 50% 80%;
 	background-color:  #FCFFFD;
 }
 .main-navbar.mobile-navbar div a{
@@ -267,7 +264,7 @@ background: url("../images/cross-2-design-blue-just-graphic@sm.png");
 
 .main-navbar div a{
 	/* color: #27aae3; */
-	color: #191919;
+	color: #e6e6e6;
 	text-transform: capitalize;
 	font-size: 16px;
 	letter-spacing: 0.2em;
@@ -285,7 +282,7 @@ background: url("../images/cross-2-design-blue-just-graphic@sm.png");
 	font-weight: 900;
 	/* color: #DC493A;
 	border-bottom: 2px solid #DC493A; */
-	color: #191919;
+	color: #e6e6e6;
 	border-bottom: 2px solid #27aae3;
 }
 .main-navbar.sticky-navbar div a.active-link{
