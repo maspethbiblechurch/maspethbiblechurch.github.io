@@ -92,6 +92,10 @@ hr.horizontal-rule{
 	display: none;
 }
 
+.full-height{
+	height: 100%;
+}
+
 /* universal rule queries */
 @media(max-width: 991px){
 	.main-header{
@@ -112,6 +116,15 @@ hr.horizontal-rule{
 	}
 	.regular-padding-section{
 		padding: 40px 30px 50px 30px;
+	}
+	.col-sm-0{
+		display: none;
+	}
+}
+
+@media(max-width: 545px){
+	.col-xs-0{
+		display: none;
 	}
 }
 
@@ -205,7 +218,9 @@ hr.horizontal-rule{
 .main-image-container-panel-text span.bold{
 	font-weight: 500;
 }
-
+.main-image-container-right{
+	position: relative;
+}
 .main-navbar{
 	height: 80px;
 	width: 100%;
@@ -947,9 +962,11 @@ transform: rotate(30deg);
 	.main-image-container-panel-text .bold span{
 		color: #e6e6e6!important;
 	}
+
 	.main-image-container-panel-text .light-blue-font{
 		border-bottom: 2px solid #337ab7;
 	}
+
 	.main-navbar{
 		background: none;
 	}
