@@ -13,6 +13,7 @@ collections:
   posts:
     title: Posts
     output: true
+    key: default key
   uploads:
     title: Uploads
     output: true
