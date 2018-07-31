@@ -17,7 +17,6 @@ collections:
     events:
       starts_at: ""
       description: ""
-      title: ""
 
 
 # Exclude from processing.
