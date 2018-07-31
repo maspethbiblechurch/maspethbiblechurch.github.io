@@ -20,13 +20,8 @@
 <div class="container-fluid no-padding">
 	<div class="main-image-container">
 	</div>
-	<div class="main-navbar">
-		<div><a href="index.html">Home</a></div>
-		<div><a class= "active-link"  href="about-us.html">About Us</a></div>
-		<div><a href="events.html">Events</a></div>
-		<div><a href="contact-us.html">Contact</a></div>
-		<div><a href="events.html">Open Gym</a></div>
-	</div>
+	{% include navbar.html %}
+
 	<div class="col-md-12 col-sm-12 col-xs-12 gray-background regular-padding-section black-border-bottom">
 		<h1 class="main-header dark-gray-font"><span class="light-blue-underline">About</span> Us</h1>
 			<p class="main-sub-paragraph dark-gray-font">We are a small group of Christians that seek to honor God in all we do. We think that the bible has given specific commands to each individual. Above all we are to love the Lord our God. Secondly, we are to love our neighbor.</p>
@@ -55,82 +50,12 @@
 			</ol>
 	</div>
 
-	<div class="col-md-12 col-sm-12 col-xs-12 royal-blue-background regular-padding-section">
-		<h1 class="main-header full-width center-div center-text white-font">
-			We Would Love for You to <span class="lobster">Visit</span> on Sunday!
-		</h1>
-			<div class="service-time-flexbox lato">
-				<div class="white-font">
-					<span class="orange-underline">9:00 AM</span> <span class="service-time-description">Worship & Body Ministry Meeting</span>
-				</div>
-				<div class="white-font">
-					<span class="orange-underline">10:30 AM</span><span class="service-time-description">Fun & Fellowship</span>
-				</div>
-				<div class="white-font">
-					<span class="orange-underline">11:00 AM</span><span class="service-time-description">Bible Study</span>
-				</div>
-			</div>
-			<div class="other-meeting-times-container half-width center-div center-text">
-				<a href="/" class=" white-font">Or join us for our other meetings!</a>
-			</div>
-	</div>
 
 
-	<div class="col-md-12 col-sm-12 col-xs-12 footer dark-gray-background footer gray-font lato">
-		<div class="row no-padding">
-			<div class="col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-0 no-padding">
-						<img src="images/cross-2-design-blue-white-text@large.png" alt="" style="width:100%;">
-			</div>
-			<div class="col-md-8 col-sm-8 col-xs-12 no-padding footer-links-container">
-				<div class="col-md-4 col-sm-4 col-xs-6 no-padding">
-					<h5 class="header-text">Quick Links</h5>
-					<a href="">Home</a>
-					<a href="">About Us</a>
-					<a href="">Location</a>
-					<a href="">First Time Visitors</a>
-				</div>
-				<div class="col-md-4 col-sm-4 col-xs-6 no-padding">
-					<h5 class="header-text">Ministries</h5>
-					<a href="">Bible Studies</a>
-					<a href="">Open Gym</a>
-					<a href="">Events</a>
-				</div>
-				<div class="col-md-4 col-sm-4 col-xs-6 no-padding footer-other-links-container">
-					<h5 class="header-text">Other</h5>
-				<a href="">Contact Us</a>
-				<a href="">Photos</a>
-				</div>
-				<div class="col-lg-0 col-xs-6 no-padding footer-logo-container">
-							<img src="images/cross-2-design-blue-white-text@large.png" alt="" style="width:80%;">
-				</div>
-			</div>
+{% include schedule-section.html %}
 
-		</div>
-		<div class="row footer-second-row">
-			<div class="col-md-12 col-sm-12 col-xs-12 no-padding center-text">
-				<div class="col-md-4 col-sm-4 no-padding">
-					<div class="address-container">
-						<i class="fas fa-1_5x fa-location-arrow"></i>
-						<span>53-71 72nd Place Maspeth, NY 11378</span>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-4 no-padding">
-					<div class="email-container">
-						<i class="fas fa-1_5x fa-envelope-square"></i>
-						<span>info@maspethbiblechurch.com</span>
-					</div>
 
-				</div>
-				<div class="col-md-4 col-sm-4 no-padding">
-					<div class="facebook-container">
-						<i class="fab fa-1_5x fa-facebook-square"></i>
-						<span>Facebook</span>
-					</div>
-					</div>
-			</div>
-		</div>
-
-	</div>
+{% include footer.html %}
 
 
 
