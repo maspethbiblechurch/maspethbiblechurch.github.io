@@ -14,9 +14,14 @@ plugins:
   - jekyll-feed
 
 collections:
-    events:
-      starts_at: ""
+  - events
+
+  scope:
+      path: ""
+      type: "events"
+    values:
       description: ""
+      stats_at: ""
 
 
 # Exclude from processing.
