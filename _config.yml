@@ -1,45 +1,29 @@
----
+
 title: Maspeth Bible Church
-timezone: UTC
-collections:
-  events:
-    title: Events
-    output: false
-    starts_at: ''
-    description: ''
-  people:
-    title: People
-    output: true
-  posts:
-    title: Posts
-    output: true
-    key: default key
-  uploads:
-    title: Uploads
-    output: true
 email: tylergaugler16@gmail.com
-description: We are a small church in Maspeth that seek to honor God in all we do.
-  We think that the bible has given specific commands to each individual. Above all
-  we are to love the Lord our God. Secondly, we are to love our neighbor.
-baseurl: ''
-url: maspethbiblechurch.com
+description: We are a small church in Maspeth that seek to honor God in all we do. We think that the bible has given specific commands to each individual. Above all we are to love the Lord our God. Secondly, we are to love our neighbor.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "maspethbiblechurch.com"
 twitter_username: jekyllrb
-github_username: jekyll
+github_username:  jekyll
+
+# Build settings
 markdown: kramdown
 theme: minima
 plugins:
-<<<<<<< HEAD
   - jekyll-feed
 
 collections:
-  - events
+   - events
 
-  scope:
-      path: ""
-      type: "events"
-    values:
-      description: ""
-      stats_at: ""
+defaults:
+  -
+    scope:
+        path: ""
+        type: "events"
+      values:
+        description: ""
+        stats_at: ""
 
 
 # Exclude from processing.
@@ -53,6 +37,3 @@ collections:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-=======
-- jekyll-feed
->>>>>>> 6540643426f53b6c2099b8dce55f175730f34701
