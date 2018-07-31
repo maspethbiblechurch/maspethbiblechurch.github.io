@@ -23,7 +23,7 @@ defaults:
       type: events
     values:
       description: ""
-      stats_at: ""
+      starts_at: ""
 
 
 # Exclude from processing.
