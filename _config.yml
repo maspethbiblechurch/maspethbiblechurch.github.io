@@ -14,16 +14,16 @@ plugins:
   - jekyll-feed
 
 collections:
-   - events
+    - events
+
 
 defaults:
-  -
-    scope:
-        path: ""
-        type: "events"
-      values:
-        description: ""
-        stats_at: ""
+  - scope:
+      path: ""
+      type: events
+    values:
+      description: ""
+      stats_at: ""
 
 
 # Exclude from processing.
