@@ -5,6 +5,18 @@ layout: default
 
 <div class="main-content">
 	{% for event in site.events %}
-	  <h1>{{ event.title }}</h1>
+		<div class="event-container">
+			<div class="event-header">
+				<h1>{{ event.title }}</h1>
+				<h4>{{ event.starts_at  | date: "%m/%d/%Y"  }}</h4>
+				<h4>{{ event.starts_at  | date: "%I:%M %p"  }}</h4>
+				<h4>{{ event.ends_at  | date: "%I:%M %p"  }}</h4>
+				
+			</div>
+			<div class="event-description">
+				{{event.description}}
+			</div>
+		</div>
+
 	{% endfor %}
 </div>

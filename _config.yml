@@ -22,8 +22,8 @@ defaults:
       path: ""
       type: events
     values:
-      description: ""
       starts_at: ""
+      ends_at: ""
 
 
 # Exclude from processing.

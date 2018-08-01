@@ -1,9 +1,43 @@
 <div class="main-image-container">
+  {% if page.title == "Home"%}
+  <div class="col-md-5 col-sm-6 col-xs-7 main-image-container-panel royal-blue-background no-padding">
+
+    <div class="main-image-container-panel-text">
+      We look for satisfaction everywhere.<br><br>
+      <span class="bold">Only in <span class="light-blue-font">Jesus</span> is there <span class="light-blue-font">fullness</span> of life.</span>
+    </div>
+  </div>
+  <div class="col-md-7 col-sm-6 col-xs-5 full-height main-image-container-right no-padding"></div>
+  {% endif %}
 </div>
 <div class="main-navbar">
-  <div><a href="index.html">Home</a></div>
-  <div><a class= "active-link"  href="about-us.html">About Us</a></div>
-  <div><a href="events.html">Events</a></div>
-  <div><a href="contact-us.html">Contact</a></div>
-  <div><a href="events.html">Open Gym</a></div>
+  {% if page.title == "Home"  %}
+  <div><a href="index.html" class="active-link" >Home</a></div>
+  {% else %}
+    <div><a href="index.html" >Home</a></div>
+  {% endif %}
+
+  {% if page.title == "About Us"  %}
+    <div><a class="active-link"  href="about-us.html">About Us</a></div>
+  {% else %}
+      <div><a href="about-us.html">About Us</a></div>
+  {% endif %}
+
+  {% if page.title == "Events"  %}
+    <div><a class="active-link"  href="events.html">Events</a></div>
+  {% else %}
+      <div><a href="events.html">Events</a></div>
+  {% endif %}
+
+  {% if page.title == "Contact Us"  %}
+    <div><a class="active-link" href="contact-us.html">Contact</a></div>
+  {% else %}
+      <div><a href="contact-us.html">Contact</a></div>
+  {% endif %}
+
+  {% if page.title == "Open Gym"  %}
+    <div><a class="active-link" href="events.html">Open Gym</a></div>
+  {% else %}
+      <div><a href="events.html">Open Gym</a></div>
+  {% endif %}
 </div>
