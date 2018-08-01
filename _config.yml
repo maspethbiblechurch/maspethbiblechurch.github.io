@@ -16,8 +16,8 @@ defaults:
     path: ''
     type: events
   values:
-    description: ''
     starts_at: ''
+    ends_at: ''
 email: tylergaugler16@gmail.com
 description: We are a small church in Maspeth that seek to honor God in all we do.
   We think that the bible has given specific commands to each individual. Above all
@@ -29,29 +29,4 @@ github_username: jekyll
 markdown: kramdown
 theme: minima
 plugins:
-  - jekyll-feed
-
-collections:
-    - events
-
-
-defaults:
-  - scope:
-      path: ""
-      type: events
-    values:
-      starts_at: ""
-      ends_at: ""
-
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+- jekyll-feed
