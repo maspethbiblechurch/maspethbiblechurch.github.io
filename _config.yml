@@ -18,6 +18,7 @@ defaults:
   values:
     starts_at: ''
     ends_at: ''
+    display_image: ''
 email: tylergaugler16@gmail.com
 description: We are a small church in Maspeth that seek to honor God in all we do.
   We think that the bible has given specific commands to each individual. Above all
