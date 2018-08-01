@@ -6,6 +6,9 @@
 /* emphasis */
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 @import url(https://fonts.googleapis.com/css?family=Roboto);
+
+{% include event.css %}
+
 input:focus,select:focus,textarea:focus,button:focus { outline: none;}
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {background-color: none;color:inherit;}
 a{

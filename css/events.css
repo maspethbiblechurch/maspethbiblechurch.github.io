@@ -1,0 +1,17 @@
+.event-container{
+
+  display: flex;
+  width: 90%;
+  margin: 30px auto;
+}
+.event-container .event-image{
+  width: 40%;
+}
+.event-container .event-image img{
+  max-width: 100%;
+}
+
+.event-container .event-main-content{
+  width: 60%;
+  padding: 20px;
+}
