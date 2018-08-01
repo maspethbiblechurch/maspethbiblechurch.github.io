@@ -2,6 +2,7 @@
 title: Events
 layout: default
 css: events.css
+javascript: event.js
 ---
 
 <div class="main-content">
@@ -15,7 +16,9 @@ css: events.css
 					{% if event.display_image != "" %}
 						<img src="{{event.display_image}}"/>
 					{% else %}
-						<img src="#" />
+						<div class="random-color" title="{{event.title}}">
+							<h2>{{event.title}}</h2>
+						</div>
 					{% endif %}
 				</div>
 				<div class="event-main-content">
