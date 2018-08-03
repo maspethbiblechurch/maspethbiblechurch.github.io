@@ -11,4 +11,9 @@
       $(this).addClass("random-color-"+randomNumber);
 
     });
+
+    $('.close-event-container').on('click', function(e){
+      e.preventDefault();
+       $('#event-info-modal').toggle();
+    })
   });

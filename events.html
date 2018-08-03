@@ -1,11 +1,13 @@
 ---
 title: Events
 layout: default
-css: events.css
-javascript: event.js
+css: [fullcalendar.min.css, events.css]
+javascript: [moment.min.js, fullcalendar.min.js, event.js]
 ---
+<script>
+const events = [];
+</script>
 
-<div class="main-content">
 	<div class="col-md-12 col-sm-12 col-xs-12 gray-background regular-padding-section">
 		<h1 class="main-header dark-gray-font"><span class="light-blue-underline">Upcoming</span> Events</h1>
 		{% for event in site.events %}
@@ -53,6 +55,107 @@ javascript: event.js
 				</div>
 			</div>
 
+
+
+			<script>
+
+	newEvent =
+        {
+					title  : `{{event.title}}`,
+					description: `{{event.content}}`,
+				 start  : moment(`{{event.starts_at | date_to_rfc822}}`),
+				 end    : moment(`{{event.ends_at | date_to_rfc822}}`),
+				color: '#4062BB'
+        };
+				events.push(newEvent);
+
+
+			</script>
+
 		{% endfor %}
+
+
 	</div>
-</div>
+
+	<div class="col-md-12 col-sm-12 col-xs-12 gray-background regular-padding-section">
+		<h1 class="main-header dark-gray-font"><span class="light-blue-underline">Regular</span> Events</h1>
+		<div class="other-events-container">
+			<div class="regular-event-container">
+				<a href="#">
+
+							<h2>Bible Studies</h2>
+
+				</a>
+			</div>
+			<div class="regular-event-container">
+				<a href="#">
+
+							<h2>Open Gym</h2>
+
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-12 col-sm-12 col-xs-12 gray-background regular-padding-section">
+
+
+		<div id="calendar"></div>
+		<div id="event-info-modal">
+			<div class="close-event-container">
+				<a href="#"><i class="fas fa-times"></i></a>
+			</div>
+			<h1 id="title"></h1>
+			<p id="description"></p>
+		</div>
+	</div>
+
+	<script>
+	const wednesday = moment().isoWeekday(3)
+	const currentYear = moment().format('YY');
+
+	events.push({
+		id: 1,
+		start: '19:30',
+    end: '20:30',
+		title: "Prayer Meeting",
+		description: "Meets at MBC for prayer",
+		dow: [ 3 ],
+		color: '#27aae3',
+		ranges: [{
+        start: moment().startOf('month'),
+        end: moment().endOf('month').subtract(7,'d'),
+    }]
+	})
+	events.push({
+		id: 1,
+		start: '14:30',
+    end: '17:00',
+		title: "Open Gym",
+		description: "Meets at MBC",
+		dow: [ 5 ],
+		color: '#27aae3',
+		ranges: [{
+        start: moment().startOf('month'),
+        end: moment().endOf('month').subtract(7,'d'),
+    }]
+	})
+	$('#calendar').fullCalendar({
+		defaultView: 'month',
+		header: {
+		 left: 'title',
+		 right: 'today, prev,next,',
+
+	 },
+	 events: events,
+	 eventClick: function(calEvent, jsEvent, view) {
+		 $('#title').html(calEvent.title);
+		 $('#description').html(calEvent.description);
+		 $('#event-info-modal').toggle();
+		}
+ });
+
+	</script>
+
+
+
+{% include schedule-section.html %}

@@ -15,7 +15,8 @@
   width: 60%;
   padding: 20px;
 }
-.random-color{
+.random-color, .other-events-container .regular-event-container{
+  min-height: 250px;
   width: 100%;
   height: 100%;
   position: relative;
@@ -47,7 +48,7 @@ border-radius: 3px;
   border: 3px solid #EFEFEF;
 }
 
-.random-color h2{
+.random-color h2, .other-events-container .regular-event-container h2{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -58,4 +59,47 @@ border-radius: 3px;
   text-align: center;
   font-weight: 900;
   padding: 10px;
+}
+
+.other-events-container{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.other-events-container .regular-event-container{
+  min-width: 150px;
+  width: 40%;
+  margin: 0px 10px;
+  background-color: #27aae3;
+}
+.other-events-container .regular-event-container h2{
+  color: #EFEFEF;
+    border: 3px solid #EFEFEF;
+}
+
+.fc-unthemed .fc-content, .fc-unthemed .fc-divider, .fc-unthemed .fc-list-heading td, .fc-unthemed .fc-list-view, .fc-unthemed .fc-popover, .fc-unthemed .fc-row, .fc-unthemed tbody, .fc-unthemed td, .fc-unthemed th, .fc-unthemed thead{
+  border-color: #8b8b8b;
+}
+.fc-today {
+    background: #F0DCCA !important;
+
+}
+.fc-event-container{
+  cursor: pointer;
+}
+
+#event-info-modal{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50% );
+  display: none;
+  padding: 20px;
+  background-color: #ffffff;
+  z-index: 100;
+}
+.close-event-container{
+  width: 100%;
+  text-align: right;
 }
