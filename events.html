@@ -114,7 +114,7 @@ const events = [];
 	const currentYear = moment().format('YY');
 
 	events.push({
-		id: 1,
+		id: "prayer-meeting",
 		start: '19:30',
     end: '20:30',
 		title: "Prayer Meeting",
@@ -127,7 +127,7 @@ const events = [];
     }]
 	})
 	events.push({
-		id: 1,
+		id: "open-gym",
 		start: '14:30',
     end: '17:00',
 		title: "Open Gym",
@@ -138,6 +138,16 @@ const events = [];
         start: moment().startOf('month'),
         end: moment().endOf('month').subtract(7,'d'),
     }]
+	})
+	events.push({
+		id: "sunday-meeting",
+		start: '7:30',
+		end: '12:00',
+		title: "Sunday Congregational Meeting",
+		description: "Meets at MBC for worship",
+		dow: [ 0 ],
+		color: '#27aae3',
+
 	})
 	$('#calendar').fullCalendar({
 		defaultView: 'month',
