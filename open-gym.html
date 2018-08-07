@@ -5,6 +5,20 @@ layout: default
 
 <div class="col-md-12 col-sm-12 col-xs-12 gray-background regular-padding-section black-border-bottom">
 	<h1 class="main-header dark-gray-font"><span class="light-blue-underline">Open</span> Gym</h1>
+	<p class="main-paragraph">
+		Open Gym is program for kids every Friday afterschool, where we play games, make crafts, and learn about how awesome Jesus is! In an effort to make registrations simpler, we are experimenting with an online registration. Please create an account <a href="register.maspethbiblechurch.com">here</a>! <br>
+		Once you create an account, you can log in and signup your children for our Summer Open Gym program!
+	</p>
+
+	<div class="open-gym-pictures-container">
+		{% for picture in site.openGymPhotos %}
+		<img src="{{picture.display_image}}"></div>
+		{% endfor %}
+	</div>
+
+
+
+
 
 </div>
 

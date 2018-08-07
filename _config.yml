@@ -13,7 +13,7 @@ collections:
     output: true
   openGymPhotos:
     title: OpenGymPhotos
-    output: true
+    output: false
 defaults:
 - scope:
     path: ''
