@@ -24,7 +24,7 @@ defaults:
     display_image: ''
 - scope:
     path: ''
-    type: events
+    type: OpenGymPhotos
   values:
     display_image: ''
 email: tylergaugler16@gmail.com
