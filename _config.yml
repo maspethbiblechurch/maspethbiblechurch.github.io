@@ -5,14 +5,14 @@ collections:
   events:
     title: Events
     output: false
+  openGymPhotos:
+    title: OpenGymPhotos
+    output: true
   posts:
     title: Posts
     output: true
   uploads:
     title: Uploads
-    output: true
-  openGymPhotos:
-    title: OpenGymPhotos
     output: true
 defaults:
 - scope:
@@ -27,7 +27,6 @@ defaults:
     type: openGymPhotos
   values:
     display_image: ''
-
 email: tylergaugler16@gmail.com
 description: We are a small church in Maspeth that seek to honor God in all we do.
   We think that the bible has given specific commands to each individual. Above all
