@@ -812,25 +812,24 @@ transform: rotate(30deg);
   /* Prevent vertical gaps */
   line-height: 0;
 
-  -webkit-column-count: 5;
+  -webkit-column-count: 3;
   -webkit-column-gap:   0px;
-  -moz-column-count:    5;
+  -moz-column-count:    3;
   -moz-column-gap:      0px;
-  column-count:         5;
+  column-count:         3;
   column-gap:           0px;
 }
 
-.open-gym-pictures-container img {
+.open-gym-pictures-container img{
   /* Just in case there are inline attributes */
   width: 100% !important;
-	/* max-height: 400px; */
   height: auto !important;
 }
 @media (max-width: 1200px) {
   .open-gym-pictures-container  {
-  -moz-column-count:    4;
-  -webkit-column-count: 4;
-  column-count:         4;
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
   }
 }
 @media (max-width: 1000px) {
@@ -853,6 +852,45 @@ transform: rotate(30deg);
   -webkit-column-count: 1;
   column-count:         1;
   }
+}
+
+/* bible study page */
+
+.bible-study-container{
+	min-height: 350px;
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
+	font-size: 18px;
+	margin-top: 30px;
+}
+.bible-study-container .bible-study-title{
+	width: 40%;
+position: relative;
+background-color: #26aae3;
+color: #ecedee;
+}
+.bible-study-container .bible-study-title h1{
+	margin: 0;
+	width: 80%;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.bible-study-container .bible-study-description{
+	padding: 25px;
+	width: 60%;
+	position: relative;
+	border: 3px solid  #26aae3;;
+}
+.bible-study-container .bible-study-description .content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	  width: 70%;
 }
 
 /* media queries; */
