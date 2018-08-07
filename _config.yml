@@ -3,13 +3,16 @@ title: Maspeth Bible Church
 timezone: UTC
 collections:
   events:
-    title: OpenGymPhotos
+    title: Events
     output: false
   posts:
     title: Posts
     output: true
   uploads:
     title: Uploads
+    output: true
+  openGymPhotos:
+    title: OpenGymPhotos
     output: true
 defaults:
 - scope:
@@ -18,6 +21,11 @@ defaults:
   values:
     starts_at: ''
     ends_at: ''
+    display_image: ''
+- scope:
+    path: ''
+    type: openGymPhotos
+  values:
     display_image: ''
 
 email: tylergaugler16@gmail.com
