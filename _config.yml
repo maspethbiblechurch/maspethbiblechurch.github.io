@@ -5,6 +5,9 @@ collections:
   events:
     title: Events
     output: false
+  opengymphotos:
+    title: OpenGymPhotos
+    output: true
   posts:
     title: Posts
     output: true
