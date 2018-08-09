@@ -82,6 +82,16 @@ a:hover{ text-decoration: none;}
 	padding-bottom: 5px;
 	border-bottom: 3px solid #191919;
 }
+.has-anchor-id{
+	position: relative;
+}
+.anchor{
+	position: absolute;
+    visibility: hidden;
+    height: 5px;
+    width: 100%;
+    top: -55px;
+}
 
 hr.horizontal-rule{
 	border: 0;
@@ -853,6 +863,8 @@ transform: rotate(30deg);
   column-count:         1;
   }
 }
+
+
 
 /* bible study page */
 
