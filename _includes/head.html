@@ -2,8 +2,14 @@
 	<meta charset="UTF-8">
 	<link rel="icon" href="images/cross-2-design-blue-just-graphic@sm.png">
 	<title>Maspeth Bible Church</title>
-	<meta name="description" content="We are a small church in Maspeth that seek to honor God in all we do. We think that the bible has given specific commands to each individual. Above all we are to love the Lord our God. Secondly, we are to love our neighbor.">
-	<meta name="keywords" content="church,maspeth,christians,nyc,bible, evangelical,queens,non-denominational, nondenominational">
+	{% if page.meta-description %}
+		<meta name="description" content="{{page.meta-description}}">
+	{% else %}
+		<meta name="description" content="We are a small church in Maspeth that seek to honor God in all we do. We think that the bible has given specific commands to each individual. Above all we are to love the Lord our God. Secondly, we are to love our neighbor.">
+	{% endif %}
+
+	<meta name="keywords" content="{{page.meta-tags}} church,maspeth,christians,nyc,bible, evangelical,queens,non-denominational, nondenominational">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
