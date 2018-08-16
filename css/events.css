@@ -68,6 +68,7 @@ border-radius: 3px;
   justify-content: center;
 }
 .other-events-container .regular-event-container{
+  display: block;
   min-width: 150px;
   width: 40%;
   margin: 0px 10px;
