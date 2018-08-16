@@ -1,5 +1,7 @@
 add mailchimp form
 
 add seo meta tags specific for each page
+https://search.google.com/search-console/index?resource_id=https%3A%2F%2Fmaspethbiblechurch.com%2F
+
 s
 add

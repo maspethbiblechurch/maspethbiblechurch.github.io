@@ -212,7 +212,8 @@ hr.horizontal-rule{
 	height: calc(100vh - 80px);
 	min-height: 250px;
 	/* max-height: 600px; */
-	background: url('images/church-copy.jpg');
+	/* background: url('images/church-copy.jpg'); */
+	background: url('images/optimized-background.jpg');
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: contain;
