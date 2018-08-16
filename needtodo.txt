@@ -5,3 +5,11 @@ https://search.google.com/search-console/index?resource_id=https%3A%2F%2Fmaspeth
 
 s
 add
+
+
+run :
+https://www.jeremywagner.me/blog/bulk-image-optimization-in-bash/
+
+So far
+$ find ./ -type f -name '*.jpg' -exec jpeg-recompress {} {} \;
+has worked. I installed jpeg-recompress. Read the link to see other formats. 
