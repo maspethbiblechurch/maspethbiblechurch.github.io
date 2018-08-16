@@ -1,7 +1,10 @@
-<head>
+``<head>
 	<meta charset="UTF-8">
 	<link rel="icon" href="images/cross-2-design-blue-just-graphic@sm.png">
 	<title>Maspeth Bible Church</title>
+	{% if page.title == "Home" %}
+	<meta name="google-site-verification" content="veUhN0wAZhxO_3LnTq1UjTVlgWO05GIvzledQSs03j0" />
+	{% endif%}
 	{% if page.meta-description %}
 		<meta name="description" content="{{page.meta-description}}">
 	{% else %}
