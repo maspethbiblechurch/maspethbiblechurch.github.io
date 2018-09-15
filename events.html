@@ -34,6 +34,7 @@ const events = [];
 				</div>
 				<div class="event-main-content">
 					<div class="event-header">
+
 						<h1>{{ event.title }}</h1>
 						<div class="event-date-container">
 
@@ -72,13 +73,13 @@ const events = [];
         {
 					title  : `{{event.title}}`,
 					description: `{{event.content}}`,
-				 start  : moment(`{{event.starts_at | date_to_rfc822}}`),
-				 end    : moment(`{{event.ends_at | date_to_rfc822}}`),
+				 start  : moment(`{{event.starts_at |  date: "%Y-%m-%d %H:%M" }}`),
+				 end    : moment(`{{event.ends_at |  date: "%Y-%m-%d %H:%M" }}`),
 				color: '#4062BB'
         };
 				events.push(newEvent);
 
-
+  console.log(newEvent);
 			</script>
 
 		{% endfor %}
@@ -144,10 +145,10 @@ const events = [];
 	}
 
 
-	const wednesdayFirstMonth = moment().startOf('month').startOf('isoweek').isoWeekday(3);
-	const wednesdaySecondMonth = moment().add(1, 'month').startOf('isoweek').isoWeekday(3);
-	const mondayFirstMonth = moment().startOf('month').startOf('isoweek').isoWeekday(1);
-	const mondaySecondMonth = moment().add(1, 'month').startOf('isoweek').isoWeekday(1);
+	const wednesdayFirstMonth = moment().startOf('month').startOf('month').isoWeekday(3);
+	const wednesdaySecondMonth = moment().add(1, 'month').startOf('month').isoWeekday(3);
+	const mondayFirstMonth = moment().startOf('month').startOf('month').isoWeekday(1);
+	const mondaySecondMonth = moment().add(1, 'month').startOf('month').isoWeekday(1);
 
 	const prayerMeetingTitle="Prayer Meeting";
 	const prayerMeetingDescription = "Meets at MBC for prayer";
@@ -157,8 +158,8 @@ const events = [];
 
 	const sonriseTitle="Sonrise Woman's Bible Study";
 	const sonriseDescription="Meets at MBC in the basement."
-	repeatingEvent(mondayFirstMonth, 19, 30, 1, 30, [0, 2], sonriseTitle, sonriseDescription);
-	repeatingEvent(mondaySecondMonth, 19, 30, 1, 30, [0, 2], sonriseTitle, sonriseDescription);
+	repeatingEvent(mondayFirstMonth, 19, 30, 1, 30, [2, 4], sonriseTitle, sonriseDescription);
+	repeatingEvent(mondaySecondMonth, 19, 30, 1, 30, [2, 4], sonriseTitle, sonriseDescription);
 
 
 
