@@ -72,7 +72,8 @@ border-radius: 3px;
   min-width: 150px;
   width: 40%;
   margin: 0px 10px;
-  background-color: #27aae3;
+  /* background-color: #27aae3; */
+  background: linear-gradient(#27aae3, #8fd3f1);
 }
 .other-events-container .regular-event-container h2{
   color: #EFEFEF;
