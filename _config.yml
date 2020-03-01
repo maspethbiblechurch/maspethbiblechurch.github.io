@@ -31,7 +31,7 @@ email: tylergaugler16@gmail.com
 description: We are a small church in Maspeth that seek to honor God in all we do.
   We think that the bible has given specific commands to each individual. Above all
   we are to love the Lord our God. Secondly, we are to love our neighbor.
-baseurl: ''
+baseurl: 
 url: maspethbiblechurch.com
 twitter_username: jekyllrb
 github_username: jekyll
