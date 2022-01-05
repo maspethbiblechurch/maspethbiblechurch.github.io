@@ -18,11 +18,11 @@ const events = [];
 </script>
 
 	<div class="col-md-12 col-sm-12 col-xs-12 gray-background regular-padding-section">
-		<h1 class="main-header dark-gray-font"><span class="light-blue-underline">Upcoming</span> Events</h1>
+		<h1 class="main-header dark-gray-font" style="display: none;"><span class="light-blue-underline">Upcoming</span> Events</h1>
 		{% for event in site.events %}
 
 
-			<div class="event-container">
+			<div class="event-container" style="display: none">
 				<div class="event-image">
 					{% if event.display_image != "" %}
 						<img src="{{event.display_image}}"/>
@@ -92,7 +92,7 @@ const events = [];
 		<div class="other-events-container">
 			<a href="bible-studies.html" class="regular-event-container">
 			<div class="">
-					<h2>Bible Studies</h2>
+					<h2>Weekly Adult Meetings</h2>
 			</div>
 			</a>
 			<a href="open-gym.html" class="regular-event-container">
@@ -105,7 +105,7 @@ const events = [];
 	<div class="col-md-12 col-sm-12 col-xs-12 gray-background regular-padding-section">
 
 
-		<div id="calendar"></div>
+		<div id="calendar" style="display: none"></div>
 		<div id="event-info-modal">
 			<div class="close-event-container">
 				<a href="#"><i class="fas fa-times"></i></a>
