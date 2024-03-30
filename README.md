@@ -14,6 +14,8 @@
 
 Install Jekyll Globally
 
+Note: currently using Ruby `2.6.3`
+
 ```bash
 $ gem install jekyll
 ```
