@@ -525,20 +525,29 @@ hr.horizontal-rule{
 	visibility:hidden;
 } */
 .background-pic-1{
-		background: url('../images/young-adults.jpg');
+		/* background: url('../images/young-adults.jpg'); */
+
+		background: url('../images/service/service-19898517-3b7b-4561-8d38-d6be8bb75a0c.jpeg');
+
 		overflow: hidden;
 		position: relative;
 }
 .background-pic-2{
-	background: url('../images/bible-study.jpg');
+
+	/* background: url('../images/bible-study.jpg'); */
+	background: url('../images/bible-study-548447326_10236985552680625_3343495713679444016_n.jpg');
+
 	overflow: hidden;
 }
+
 .background-pic-3{
-	background: url('../images/open-gym-group.jpg');
+	background: url('../images/open-gym/opengym-60671882-5b07-4680-bbe6-70b2a5227988.jpeg');
+
 	overflow: hidden;
 }
 .background-pic-4{
-	background: url('../images/picnic.jpg');
+	/* background: url('../images/picnic.jpg'); */
+	background: url('../images/open-gym/easter-65b49645-3ba8-4862-9c7e-fa757c64a388.jpeg');
 	overflow: hidden;
 }
 .picture-text-overlay{
